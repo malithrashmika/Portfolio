@@ -1,0 +1,59 @@
+body{
+    background: black;
+}
+body>header>div:nth-child(1)>img{
+    width: 200px;
+    height: 200px;
+
+}
+section>div:first-child>img {
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+    background: #212121;
+    position: absolute;
+    right: 10px;
+
+}
+section>div:nth-child(2) {
+    width: 700px;
+    height: 400px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(60, 60, 60);
+
+}
+
+section>div>div{
+    color: aliceblue;
+    font-family: "Calibri Light";
+    text-align: center;
+}
+body>section{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+header{
+    position: relative;
+}
+header>nav{
+    color: white;
+    height: fit-content;
+    position: absolute;
+    left: 75%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+header>nav>ul{
+    list-style: none;
+}
+header>nav>ul>li>{
+   display:  inline;
+    margin: 0px 10px;
+}
