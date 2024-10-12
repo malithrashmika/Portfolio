@@ -11,3 +11,16 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*padding: 10px ;*/
+    background:#081b29 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
