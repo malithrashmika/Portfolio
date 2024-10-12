@@ -65,3 +65,18 @@ nav{
 .navbar a:hover {
     color: #F5004F;
 }
+
+.home {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background: url("Assets/background/Witching Hour.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
