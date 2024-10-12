@@ -91,3 +91,9 @@ nav{
     animation: slideBottem 1s ease forwards;
     animation-delay: .7s;
 }
+.my-img>.portfolio-photo{
+    width: 100%; /* Adjust the width to fit the container */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover
+}
