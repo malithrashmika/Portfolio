@@ -24,3 +24,41 @@ body {
     z-index: 100;
 
 }
+.logo {
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.portfolio-logo{
+    width: 80px; /* Adjust the size */
+    height: auto; /* Maintain aspect ratio */
+}
+nav{
+    margin-right: 30px;
+    padding: 0;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
