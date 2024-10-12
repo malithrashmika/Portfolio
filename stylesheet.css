@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+
 body {
     color: antiquewhite;
     background: #081b29;
@@ -11,19 +12,21 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     /*padding: 10px ;*/
-    background:#081b29 ;
+    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 
 }
+
 .logo {
     top: 0;
     left: 0;
@@ -37,11 +40,12 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
-.portfolio-logo{
+.portfolio-logo {
     width: 80px; /* Adjust the size */
     height: auto; /* Maintain aspect ratio */
 }
-nav{
+
+nav {
     margin-right: 30px;
     padding: 0;
 }
@@ -62,6 +66,7 @@ nav{
     animation-delay: calc(.2s * var(--i));
 
 }
+
 .navbar a:hover {
     color: #F5004F;
 }
@@ -80,6 +85,7 @@ nav{
     align-items: center;
     padding: 70px 10% 0;
 }
+
 .home-content {
     max-width: 600px;
 }
@@ -91,12 +97,14 @@ nav{
     animation: slideBottem 1s ease forwards;
     animation-delay: .7s;
 }
-.my-img>.portfolio-photo{
+
+.my-img > .portfolio-photo {
     width: 100%; /* Adjust the width to fit the container */
     max-width: 300px; /* Set a maximum width */
     height: auto; /* Maintains the aspect ratio */
     object-fit: cover
 }
+
 .home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
@@ -122,6 +130,7 @@ nav{
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
+
 .home-sci a {
     display: inline-flex;
     justify-content: center;
@@ -170,6 +179,7 @@ nav{
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan;
 }
+
 
 @keyframes slideRight {
     0% {
