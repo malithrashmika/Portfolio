@@ -7,7 +7,10 @@
 
 body {
     color: antiquewhite;
-    background: #081b29;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,43 +80,117 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    background: url("Assets/background/Witching Hour.jpg");
+    background: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
     align-items: center;
     padding: 70px 10% 0;
 }
+.home-wrapper{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 15px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7 ;
+}
 
 .home-content {
-    max-width: 600px;
+    max-width: 900px;
+    margin-right: 100px;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     opacity: 100%;
-    animation: slideBottem 1s ease forwards;
+    animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
 
 .my-img > .portfolio-photo {
-    width: 100%; /* Adjust the width to fit the container */
-    max-width: 300px; /* Set a maximum width */
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: cover
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-left: 20px;
 }
 
 .home-content h3:nth-of-type(2) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
-.home-content h3 span {
-    color: #00FF9C;
+/* Sliding text container */
+.text {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 400px;
+    overflow: hidden;
+    font-size: 40px;
+    vertical-align: middle;
 }
+
+/* Individual sliding texts */
+.sliding-text {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: slideUp 16s infinite; /* Loop every 16 seconds */
+}
+
+/* Delaying each item to appear one after the other */
+.sliding-text:nth-child(1) {
+    animation-delay: 0s;
+}
+.sliding-text:nth-child(2) {
+    animation-delay: 4s;
+}
+.sliding-text:nth-child(3) {
+    animation-delay: 8s;
+}
+.sliding-text:nth-child(4) {
+    animation-delay: 12s;
+}
+
+/* Keyframe for sliding the text */
+@keyframes slideUp {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+    10% {
+        top: 0;
+        opacity: 1;
+    }
+    25% {
+        top: 0;
+        opacity: 1;
+    }
+    35% {
+        top: -100%;
+        opacity: 0;
+    }
+    100% {
+        top: -100%;
+        opacity: 0;
+    }
+}
+
+
 
 .home-content h1 {
     font-size: 56px;
