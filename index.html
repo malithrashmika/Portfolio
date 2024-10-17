@@ -10,26 +10,30 @@
     <link rel="stylesheet" href="Assets/styles/normalize.css">
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script defer src="main.js"></script>
+    <script defer src="button.js"></script>
 </head>
 <body>
-<!--<header class="header">-->
-<!--    <a href="#" class="logo">-->
-<!--        <img src="Assets/logos/MAlith%20rashmika/mr-high-resolution-logo-transparent.png" alt="Portfolio Logo" class="portfolio-logo">-->
-<!--    </a>-->
-<!--    <nav class="navbar">-->
-<!--        <a href="#" style="&#45;&#45;i:1" class="active">Home</a>-->
-<!--        <a href="#" style="&#45;&#45;i:2">About</a>-->
-<!--        <a href="#" style="&#45;&#45;i:3">Skill</a>-->
-<!--        <a href="#" style="&#45;&#45;i:4">Assigment</a>-->
-<!--        <a href="#" style="&#45;&#45;i:5">Projects</a>-->
-<!--        <a href="#" style="&#45;&#45;i:6">Contact</a>-->
-<!--    </nav>-->
-<!--</header>-->
 <div class="slide-container">
     <section class="home">
         <div class="home-wrapper">
+            <header class="header">
+                <a href="#" class="logo">
+                    <img src="Assets/logos/MAlith%20rashmika/mr-high-resolution-logo-transparent%20(2).png" alt="Portfolio Logo" class="portfolio-logo">
+                </a>
+                <nav class="navbar">
+                    <a href="#" style="--i:1" class="active">Home</a>
+                    <a href="#" style="--i:2">About</a>
+                    <a href="#" style="--i:3">Skill</a>
+                    <a href="#" style="--i:4">Assigment</a>
+                    <a href="#" style="--i:5">Projects</a>
+                    <a href="#" style="--i:6">Contact</a>
+                </nav>
+            </header>
             <div class="my-img">
                 <img src="Assets/Images/photo_2024-10-11_07-34-39.jpg" alt="Portfolio Photo" class="portfolio-photo">
             </div>
@@ -52,7 +56,10 @@
                         <a href="#" style="--i:9"><i class='bx bxl-github'></i></a>
                         <a href="#" style="--i:10"><i class='bx bxl-whatsapp'></i></a>
                     </div>
-                    <a href="#" class="btn-box">More About Me</a>
+                    <div  class="frame">
+                        <button class="bubbly-button"><span>Read More</span></button>
+                    </div>
+
                 </div>
                 <span class="home-imgHover"></span>
             </div>
@@ -62,6 +69,19 @@
 
     <section class="about" id="about">
         <div class="home-wrapper">
+            <header class="header">
+                <a href="#" class="logo">
+                    <img src="Assets/logos/MAlith%20rashmika/mr-high-resolution-logo-transparent%20(2).png" alt="Portfolio Logo" class="portfolio-logo">
+                </a>
+                <nav class="navbar">
+                    <a href="#" style="--i:1" class="active">Home</a>
+                    <a href="#" style="--i:2">About</a>
+                    <a href="#" style="--i:3">Skill</a>
+                    <a href="#" style="--i:4">Assigment</a>
+                    <a href="#" style="--i:5">Projects</a>
+                    <a href="#" style="--i:6">Contact</a>
+                </nav>
+            </header>
             <div class="about-img">
                 <img src="Assets/Images/photo_2024-10-11_07-34-39.jpg">
             </div>
@@ -74,13 +94,29 @@
                     I'm excited to contribute to innovative projects and collaborate
                     with fellow tech enthusiasts. Let's connect and build something
                     amazing together!</p>
-                <a href="#" class="btn-box">More About Me</a>
+                <div  class="frame">
+                    <button class="bubbly-button"><span>Read More</span></button>
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="Services" id="services">
-            <div class="home-wrapper"> <div class="container">
+            <div class="home-wrapper">
+                <header class="header">
+                    <a href="#" class="logo">
+                        <img src="Assets/logos/MAlith%20rashmika/mr-high-resolution-logo-transparent%20(2).png" alt="Portfolio Logo" class="portfolio-logo">
+                    </a>
+                    <nav class="navbar">
+                        <a href="#" style="--i:1" class="active">Home</a>
+                        <a href="#" style="--i:2">About</a>
+                        <a href="#" style="--i:3">Skill</a>
+                        <a href="#" style="--i:4">Assigment</a>
+                        <a href="#" style="--i:5">Projects</a>
+                        <a href="#" style="--i:6">Contact</a>
+                    </nav>
+                </header>
+                <div class="container">
                 <h1 class="sub-title">My<span>Services</span></h1>
                 <div class="services-list">
                     <div>
@@ -111,27 +147,162 @@
             </div>
         </div>
     </section>
+
+
     <section class="skill-section">
         <div class="home-wrapper">
-            <div class="skill">
-                <div class="outer">
-                    <div class="inner">
-                        <div id="number"></div>
+            <header class="header">
+                <a href="#" class="logo">
+                    <img src="Assets/logos/MAlith%20rashmika/mr-high-resolution-logo-transparent%20(2).png" alt="Portfolio Logo" class="portfolio-logo">
+                </a>
+                <nav class="navbar">
+                    <a href="#" style="--i:1" class="active">Home</a>
+                    <a href="#" style="--i:2">About</a>
+                    <a href="#" style="--i:3">Skill</a>
+                    <a href="#" style="--i:4">Assigment</a>
+                    <a href="#" style="--i:5">Projects</a>
+                    <a href="#" style="--i:6">Contact</a>
+                </nav>
+            </header>
+            <div class="skill-bars">
+                <div class="container1" id="Skills">
+                    <div class="bar-controol">
+                        <div class="Technical-bars">
+                            <h1 class="heading1">Technical Skills</h1>
+                            <div class="bar"><i class='bx bxl-html5' style='color:#ff5f00'  ></i>
+                                <div class="info">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="progress-line html">
+                                    <span data-progress="90%"></span> <!-- Added data-progress attribute here -->
+                                </div>
+                            </div>
+                            <div class="bar"><i class='bx bxl-css3' style='color:#00f1ff'  ></i>
+                                <div class="info">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="progress-line css">
+                                    <span data-progress="60%"></span> <!-- Added data-progress attribute here -->
+                                </div>
+                            </div>
+                            <div class="bar"><i class='bx bxl-javascript' style='color:#fff700'  ></i>
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="progress-line javascript">
+                                    <span data-progress="85%"></span> <!-- Added data-progress attribute here -->
+                                </div>
+                            </div>
+                            <div class="bar"><i class='bx bxl-java' style='color:#ff0000'  ></i>
+                                <div class="info">
+                                    <span>Java</span>
+                                </div>
+                                <div class="progress-line java">
+                                    <span data-progress="90%"></span> <!-- Added data-progress attribute here -->
+                                </div>
+                            </div>
+                            <div class="bar"><i class='bx bxl-python' style='color:#ff00e4'  ></i>
+                                <div class="info">
+                                    <span>Python</span>
+                                </div>
+                                <div class="progress-line python">
+                                    <span data-progress="90%"></span> <!-- Added data-progress attribute here -->
+                                </div>
+                            </div></div>
+                        <div class="skill-circles ">
+                            <h1 class="heading2">Professional  Skills</h1>
+                            <div class="skill-bars-x1">
+                                <div class="skill"><div class="outer">
+                                    <div class="inner">
+                                        <div class="pro-skilltxt">Creativity</div>
+                                        <div class="number" id="number"></div>
+                                    </div>
+                                </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg."
+                                         version="1.1" width="160px"
+                                         height="160px" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                         xsi:schemaLocation="http://www.w3.org/2000/svg. ">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%"
+                                                      stop-color="#DA22FF"/>
+                                                <stop offset="100%"
+                                                      stop-color="#9733EE"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle class="circle1" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="skill ">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="pro-skilltxt">Problem Solving</div>
+                                            <div class="number" id="number1"></div>
+                                        </div>
+                                    </div>
+                                    <svg height="160px"
+                                         version="1.1" width="160px"
+                                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                         xsi:schemaLocation="http://www.w3.org/2000/svg. ">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%"
+                                                      stop-color="#DA22FF"/>
+                                                <stop offset="100%"
+                                                      stop-color="#9733EE"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="skill-bars-x2">
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="pro-skilltxt">Team Work</div>
+                                            <div class="number" id="number2"></div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns= "http://www.w3.org/2000/svg."
+                                         version="1.1" width="160px"
+                                         height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%"
+                                                      stop-color="#DA22FF"/>
+                                                <stop offset="100%"
+                                                      stop-color="#9733EE" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="pro-skilltxt">Communication</div>
+                                            <div class="number" id="number3"></div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns= "http://www.w3.org/2000/svg."
+                                         version="1.1" width="160px"
+                                         height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%"
+                                                      stop-color="#DA22FF"/>
+                                                <stop offset="100%"
+                                                      stop-color="#9733EE" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle class="circle4" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <svg xmlns= "http://www.w3.org/2000/svg."
-                     version="1.1" width="160px"
-                     height="160px">
-                    <defs>
-                        <linearGradient id="GradientColor">
-                            <stop offset="0%"
-                                  stop-color="#DA22FF"/>
-                            <stop offset="100%"
-                                  stop-color="#9733EE" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="80" cy="80" r="70" stroke-linecap="round"/>
-                </svg>
             </div>
         </div>
     </section>
