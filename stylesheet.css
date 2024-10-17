@@ -677,9 +677,10 @@ body{
     height: 100%;
     background-color: #ff0081;
     border-radius: 10px;
-    transform: scaleX(0);  /* Hidden initially */
-    transform-origin: left;
-    animation: progress-animation 1s ease forwards;
+    /*transform: scaleX(0);  !* Hidden initially *!*/
+    /*transform-origin: left;*/
+    /*animation: progress-animation 1s ease forwards;*/
+
 }
 
 @keyframes progress-animation {
@@ -794,9 +795,10 @@ body{
 .circle1{
     fill: none;
     stroke: url(#GradientColor);
-    stroke-width: 18px;
+    stroke-width: 20px;
     stroke-dasharray: 450;
     stroke-dashoffset: 450;
+    transition: stroke-dashoffset 2s ease;
     animation: anim1 2s linear forwards;
 }
 .circle2{
@@ -805,6 +807,7 @@ body{
     stroke-width: 18px;
     stroke-dasharray: 450;
     stroke-dashoffset: 450;
+    transition: stroke-dashoffset 2s ease;
     animation: anim2 2s linear forwards;}
 
 .circle3{
@@ -813,6 +816,7 @@ body{
     stroke-width: 18px;
     stroke-dasharray: 450;
     stroke-dashoffset: 450;
+    transition: stroke-dashoffset 2s ease;
     animation: anim3 2s linear forwards;
 }
 .circle4{
@@ -821,6 +825,7 @@ body{
     stroke-width: 18px;
     stroke-dasharray: 450;
     stroke-dashoffset: 450;
+    transition: stroke-dashoffset 2s ease;
     animation: anim4 2s linear forwards;
 }
 @keyframes anim1 {
