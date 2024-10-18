@@ -10,6 +10,7 @@ function generateStars(type, numStars) {
 }
 
 // Generate stars for each layer
-generateStars("stars", 700);   // Small stars
-generateStars("stars2", 200);  // Medium stars
-generateStars("stars3", 100);  // Large stars
+generateStars("stars", 4000);// Small stars
+generateStars("stars1", 1000);// Small stars
+generateStars("stars2", 300);  // Medium stars
+generateStars("stars3", 100);// Large stars
