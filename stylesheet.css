@@ -10,8 +10,8 @@
 }
 
 body {
-    color: #232526;
-    background-color: transparent;
+    color: #ffffff;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     /*background-color:  #e3edf7;*/
     /*background: #232526; !* fallback for old browsers *!*/
     /*background: -webkit-linear-gradient(to right, #414345, #232526); !* Chrome 10-25, Safari 5.1-6 *!*/
@@ -20,6 +20,62 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+#stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 150s linear infinite;
+}
+
+/* Title styles */
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#title span {
+    display: block;
+    font-size: 50px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
 }
 section{
     position: relative;
@@ -44,7 +100,7 @@ section{
     display: flex;
     justify-content: space-between;
     height: 90vh;
-    background: #c1c8d3;
+    background: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,10 +109,10 @@ section{
     transition: background 0.5s, transform 0.5s;
     /*box-shadow: 1px 1px 20px #012290f7,*/
     /*1px 1px 40px #0053b8f7;*/
-    box-shadow:6px 6px 10px -1px rgba(0,0,0,0.2),
-    -6px -6px 10px -1px rgba(255,255,255,0.2),
-    -1px -1px 0px rgba(255,255,255,1),1px 1px 0px rgba(0,0,0,0.15),
-    0px 12px 10px -10px rgba(0,0,0,0.05);
+    /*box-shadow:6px 6px 10px -1px rgba(0,0,0,0.2),*/
+    /*-6px -6px 10px -1px rgba(255,255,255,0.2),*/
+    /*-1px -1px 0px rgba(255,255,255,1),1px 1px 0px rgba(0,0,0,0.15),*/
+    /*0px 12px 10px -10px rgba(0,0,0,0.05);*/
     /*box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),*/
     /*6px 6px 10px -1px rgba(230, 230, 230, 0.7);*/
 }
@@ -67,7 +123,7 @@ section{
     left: 0;
     width: 100%;
     padding: 10px ;
-    background:  #c1c8d3;
+    background:  transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +157,7 @@ nav {
 .navbar a {
     display: inline-block;
     font-size: 20px;
-    color: #232526;
+    color: #ffffff;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -261,7 +317,7 @@ nav {
 
 .home-sci a:hover {
     background:#ff0081;
-    color: #081b29;
+    color: #ffffff;
     /*box-shadow: 0 0 20px #0ef;;*/
 
 }
@@ -272,7 +328,7 @@ nav {
     background: #00FF9C;
     border-radius: 40px;
     font-size: 16px;
-    color: #081b29;
+    color: #fcfbfd;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -362,8 +418,11 @@ body{
 
     &:active{
         transform: scale(0.9);
-        background-color: darken(#ff0081, 5%);
         box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+    }
+
+    &:active{
+        background-color: darken(#ff0081, 5%);
     }
 
     &.animate{
@@ -475,7 +534,7 @@ body{
 .btn.box {
     display: inline-block;
     background-color: #ff0081;
-    color: #000;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -546,7 +605,7 @@ body{
 
 .services-list div a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -558,7 +617,7 @@ body{
     background: #ff0081;
     border-radius: 40px;
     font-size: 16px;
-    color: #081b29;
+    color: #ffffff;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -614,9 +673,9 @@ body{
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 30px;
-    color: #232526;
     font-weight: bold;
     font-family: inherit;
+    color: #fcfbfd;
 }
 .heading2{
     position: absolute;
@@ -627,7 +686,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    color: #232526;
+    color: #fcfbfd;
     font-weight: bold;
     font-family: inherit;
 }
@@ -668,7 +727,7 @@ body{
     border-radius: 10px;
     width: 160%;
     height: 7px;
-    background-color: #000000;
+    background-color: rgba(220, 207, 207, 0.19);
     overflow: hidden;
 }
 
@@ -677,9 +736,10 @@ body{
     height: 100%;
     background-color: #ff0081;
     border-radius: 10px;
-    /*transform: scaleX(0);  !* Hidden initially *!*/
-    /*transform-origin: left;*/
-    /*animation: progress-animation 1s ease forwards;*/
+    transform: scaleX(0);  /* Hidden initially */
+    transform-origin: left;
+    animation: progress-animation 1s ease forwards;
+
 
 }
 
@@ -713,7 +773,7 @@ body{
 .Technical-bars .bar .progress-line span::after {
     position: absolute;
     padding: 2px 20px;
-    background-color: #000000;
+    background-color:  rgba(220, 207, 207, 0.19);
     color: #ffffff;
     font-size: 12px;
     border-radius: 3px;
@@ -730,7 +790,7 @@ body{
     border: 7px solid transparent;
     border-bottom-width: 0px;
     border-right-width: 0px;
-    border-top-color: #000000;
+    border-top-color:  rgba(220, 207, 207, 0.19);
     top: -10px;
     right: 0;
 }
@@ -773,7 +833,7 @@ body{
     width: 160px;
     padding: 20px;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-    6px 6px 10px -1px rgba(255,255,255,0.7);
+    6px 6px 10px -1px rgba(255, 255, 255, 0);
     border-radius: 50%;
 }
 .inner{
@@ -782,10 +842,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-    inset -4px -4px 6px -1px rgba(255,255,255,0.2),
-    -0.5px -0.5px 0px rgba(255,255,255,1),0.5px 0.5px 0px rgba(0,0,0,0.15),
-    0px 12px 10px -10px rgba(0,0,0,0.05);
+    /*box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),*/
+    /*inset -4px -4px 6px -1px rgba(255,255,255,0.2),*/
+    /*-0.5px -0.5px 0px rgba(255,255,255,1),0.5px 0.5px 0px rgba(0,0,0,0.15),*/
+    /*0px 12px 10px -10px rgba(0,0,0,0.05);*/
     border-radius: 50%;
 }
 .number{
