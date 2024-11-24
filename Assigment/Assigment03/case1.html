@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body>section:first-child{
+            background: red;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            right: 1;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+        }
+        body>section:nth-child(2){
+            background: green;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            right: 0;
+            left: 1;
+            top: 0;
+            bottom: 0;
+        }
+
+        body>section:nth-child(3){
+            background:deeppink ;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            right: 0;
+            left: 1;
+            top: 1;
+            bottom: 0;
+        }
+        body>section:nth-child(4){
+            background: darkorange;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            right: 1;
+            left: 0;
+            top: 1;
+            bottom: 0;
+        }
+        body>section:nth-child(5){
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+        section:nth-child(5)>div:first-child{
+            background: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+        section>div:nth-child(1){
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right:0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+        section>div:first-child>div:first-child{
+            background: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right:0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .corner{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            border-radius: 100%;
+
+        }
+        #corner1{
+            top: -5vw;
+            right: -5vw;
+            top:calc(-5vw/2);
+            right: calc(-5vw/2);
+        }
+        #corner2{
+            top: -5vw;
+            left: -5vw;
+            top:calc(-5vw/2);
+            left: calc(-5vw/2);
+        }
+        #corner3{
+            right:-5vw;
+            bottom: -5vw;
+        }
+        #corner4{
+            left:-5vw;
+            bottom: -5vw;
+        }
+        #corner5{
+            top: -5vw;
+            left: 42.5vw;
+
+        }
+        #corner6{
+            bottom: -8vw;
+            left: 42.5vw;
+
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div></div>
+</section>
+<div class="corner" id="corner1"></div>
+<div class="corner" id="corner2"></div>
+<div class="corner" id="corner3"></div>
+<div class="corner" id="corner4"></div>
+<div class="corner" id="corner5"></div>
+<div class="corner" id="corner6"></div>
+
+</body>
+</html>

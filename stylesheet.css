@@ -118,10 +118,10 @@ section{
     transition: background 0.5s, transform 0.5s;
     /*box-shadow: 1px 1px 20px #012290f7,*/
     /*1px 1px 40px #0053b8f7;*/
-    box-shadow:6px 6px 10px -1px rgba(0,0,0,0.2),
-    -6px -6px 10px -1px rgba(255,255,255,0.2),
-    -1px -1px 0px rgba(255,255,255,1),1px 1px 0px rgba(0,0,0,0.15),
-    0px 12px 10px -10px rgba(0,0,0,0.05);
+    /*box-shadow:6px 6px 10px -1px rgba(0,0,0,0.2),*/
+    /*-6px -6px 10px -1px rgba(255,255,255,0.2),*/
+    /*-1px -1px 0px rgba(255,255,255,1),1px 1px 0px rgba(0,0,0,0.15),*/
+    /*0px 12px 10px -10px rgba(0,0,0,0.05);*/
     /*box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),*/
     /*6px 6px 10px -1px rgba(230, 230, 230, 0.7);*/
 }
@@ -1009,12 +1009,14 @@ svg{
     height: 100%;
 }
 .contact{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
+}
+.contacts{
+    display: flex;
 }
 .contact-text h2{
     font-size: 90px;
@@ -1032,7 +1034,12 @@ svg{
     margin-bottom: 2rem;
 }
 .contact-list{
-    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 
 }
 .contact-list li{
@@ -1050,6 +1057,15 @@ svg{
     transform: scale(1.01) translateY(-5px);
     color: #ff00e4;
 }
+.contact-icons{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
 .contact-icons i{
     display: inline-flex;
     justify-content: center;
@@ -1062,8 +1078,9 @@ svg{
     margin: 30px 15px 30px 0;
     transition: .5s ease;
     opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s* var(--i));
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #ff0081, 0 0 25px #ff0081
 }
 .contact-icons i:hover{
     background: #ff00e4;
@@ -1089,10 +1106,10 @@ svg{
     resize: none;
     height: 220px;
 }
-.contact-form send{
+ .send{
     display: inline-block;
     padding: 14px 60px;
-    background: #ff0081;
+    background: #ff0085;
     border-radius: 40px;
     font-size: 18px;
     color: #ffffff;
@@ -1105,7 +1122,8 @@ svg{
     box-shadow: 0 0 5px #ff0081,
     0 0 25px #ff0081;
 }
-.contact-form form.send:hover{
+
+.send:hover{
     .read:hover {
         box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 50px cyan,
@@ -1207,6 +1225,8 @@ svg{
     max-width: 1024px;
     margin: 0 auto;
     font-family: var(--font-sans);
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -1214,6 +1234,7 @@ svg{
     max-width: 100%; /* Ensure no overflow */
     position: relative;
     display: flex;
+    max-height: 250px;
     align-items: flex-end;
     overflow: hidden;
     padding: 1rem;
@@ -1298,6 +1319,21 @@ svg{
 }
 
 .card:nth-child(4):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+.card:nth-child(5):before {
+    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(6):before {
+    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(7):before {
+    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(8):before {
     background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
 

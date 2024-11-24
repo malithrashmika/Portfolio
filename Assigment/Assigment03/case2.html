@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        header{
+            background: #ffe57b;
+            position: relative;
+        }
+        header>nav{
+            height: fit-content;
+            position: absolute;
+            left: 75%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        header>nav>ul{
+            list-style: none;
+
+        }
+        header>nav>ul>li{
+            display: inline;
+            margin: 0px 10px;
+            /*add space to navigation*/
+        }
+        footer{
+            background: gray;
+        }
+        footer>div{
+            color: white;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        aside{
+            background: purple;
+            color: white;
+            width: 250px;
+            position: absolute;
+            top: 0;
+            bottom: 0 ;
+        }
+        aside>nav>ul{
+            list-style: none;
+            margin: 0;
+        }
+        aside>nav>ul>li{
+            margin: 10px;
+        }
+        main{
+            position: relative;
+        }
+        main>section{
+
+            margin-left: 250px;
+        }
+        main>section>section{
+            background: #26ace0;
+            position: relative;
+            height: 300px;
+        }
+        main>section>section>div{
+            background: url("assest/videos/monkey.gif");
+            width: calc(100%/3);
+            height: 300px;
+            position: absolute;
+        }
+
+        main>section>section>div:nth-child(2){
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        main>section>section>div:last-child{
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="assest/images/ijse.png">
+    <nav><ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </ul></nav>
+</header>
+<main>
+    <!--sidebar-->
+    <aside>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contacts</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </aside>
+    <!--content-->
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, asperiores aut commodi consequatur cupiditate doloribus hic iste laborum laudantium minima molestiae neque perferendis quia recusandae repellat tempora tempore! Enim, numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus eius eligendi eum neque porro sed! Assumenda consectetur culpa doloribus exercitationem fugiat magnam quod suscipit tempora tenetur vitae! Est, porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at autem commodi consequuntur debitis delectus dolorem doloremque ea est facere fugit in perferendis quaerat quam, quis rem, tempora tempore voluptatem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, asperiores aut commodi consequatur cupiditate doloribus hic iste laborum laudantium minima molestiae neque perferendis quia recusandae repellat tempora tempore! Enim, numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus eius eligendi eum neque porro sed! Assumenda consectetur culpa doloribus exercitationem fugiat magnam quod suscipit tempora tenetur vitae! Est, porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at autem commodi consequuntur debitis delectus dolorem doloremque ea est facere fugit in perferendis quaerat quam, quis rem, tempora tempore voluptatem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, asperiores aut commodi consequatur cupiditate doloribus hic iste laborum laudantium minima molestiae neque perferendis quia recusandae repellat tempora tempore! Enim, numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus eius eligendi eum neque porro sed! Assumenda consectetur culpa doloribus exercitationem fugiat magnam quod suscipit tempora tenetur vitae! Est, porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at autem commodi consequuntur debitis delectus dolorem doloremque ea est facere fugit in perferendis quaerat quam, quis rem, tempora tempore voluptatem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, asperiores aut commodi consequatur cupiditate doloribus hic iste laborum laudantium minima molestiae neque perferendis quia recusandae repellat tempora tempore! Enim, numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus eius eligendi eum neque porro sed! Assumenda consectetur culpa doloribus exercitationem fugiat magnam quod suscipit tempora tenetur vitae! Est, porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at autem commodi consequuntur debitis delectus dolorem doloremque ea est facere fugit in perferendis quaerat quam, quis rem, tempora tempore voluptatem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, asperiores aut commodi consequatur cupiditate doloribus hic iste laborum laudantium minima molestiae neque perferendis quia recusandae repellat tempora tempore! Enim, numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus eius eligendi eum neque porro sed! Assumenda consectetur culpa doloribus exercitationem fugiat magnam quod suscipit tempora tenetur vitae! Est, porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at autem commodi consequuntur debitis delectus dolorem doloremque ea est facere fugit in perferendis quaerat quam, quis rem, tempora tempore voluptatem?</p>
+    </section>
+</main>
+
+<footer><div>Developed by IJSE</div></footer>
+</body>
+</html>

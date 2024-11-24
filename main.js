@@ -23,3 +23,4 @@ animateCounter(number2, 80, 30);  // 80% target, 30ms interval
 
 let number3 = document.getElementById('number3');
 animateCounter(number3, 75, 30);  // 75% target, 30ms interval
+;
