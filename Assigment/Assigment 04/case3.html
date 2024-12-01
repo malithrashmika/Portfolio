@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04 Case 03</title>
+
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+
+    <style>
+
+        :root {
+            --width: 180px;
+            --height: 80px;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        div {
+            width: var(--width);
+            height: var(--height);
+            background: blue;
+            border-radius: 10px;
+            animation: my-animation 3s infinite alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+                background: blue;
+            }
+            25% {
+                margin-left: calc(100vw - var(--width));
+                margin-top: 0;
+                background: red;
+                transform: rotate(180deg);
+            }
+            50% {
+                margin-left: calc(100vw - var(--width));
+                margin-top: calc(100vh - var(--height));
+                background: yellow;
+                transform: rotate(0deg);
+            }
+            75% {
+                margin-left: 0;
+                margin-top: calc(100vh - var(--height));
+                background: green;
+                transform: rotate(-180deg);
+            }
+            /*100% {*/
+
+            /*}*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

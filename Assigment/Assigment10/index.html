@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .calculator {
+            max-width: 800px;
+            height: 700px ;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .calculator-display {
+            height: 50px;
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+        .row{
+            margin: 30px;
+
+        }
+        button{
+            height: 50px;
+            box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.97),
+             1px 1px 40px rgba(202, 202, 202, 0.97);
+            }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <input type="text" id="display" class="form-control calculator-display" readonly>
+
+        <div class="row">
+            <button class="col-3 btn btn-light" data-value="7">7</button>
+            <button class="col-3 btn btn-light" data-value="8">8</button>
+            <button class="col-3 btn btn-light" data-value="9">9</button>
+            <button class="col-3 btn btn-warning" data-value="/">/</button>
+        </div>
+        <div class="row">
+            <button class="col-3 btn btn-light" data-value="4">4</button>
+            <button class="col-3 btn btn-light" data-value="5">5</button>
+            <button class="col-3 btn btn-light" data-value="6">6</button>
+            <button class="col-3 btn btn-warning" data-value="*">*</button>
+        </div>
+        <div class="row">
+            <button class="col-3 btn btn-light" data-value="1">1</button>
+            <button class="col-3 btn btn-light" data-value="2">2</button>
+            <button class="col-3 btn btn-light" data-value="3">3</button>
+            <button class="col-3 btn btn-warning" data-value="-">-</button>
+        </div>
+        <div class="row">
+            <button class="col-3 btn btn-light" data-value="0">0</button>
+            <button class="col-3 btn btn-light" data-value=".">.</button>
+            <button class="col-3 btn btn-danger" id="clear">C</button>
+            <button class="col-3 btn btn-warning" data-value="+">+</button>
+        </div>
+        <div class="row">
+            <button class="col-12 btn btn-success" id="equals">=</button>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

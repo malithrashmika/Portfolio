@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case 01</title>
+
+    <style>
+        main{
+            width: 100vw;
+            height: 50vh;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .home-img-section{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .home-gif{
+            width: 500px;
+            height: 300px;
+            background-image: url("asset/home.gif");
+            background-position: center;
+            background-size: cover;
+        }
+        .man-img-section{
+            width: calc(100vw - 500px);
+            height: 100%;
+            position: absolute;
+            display: flex;
+        }
+        .man-img-section>div{
+            width: 150px;
+            height: 300px;
+            background-image: url("asset/Human walk cycle.gif");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            top: calc(100% - 300px);
+        }
+        .man-img-section>h1{
+            width: 50px;
+            height: 100px;
+            position: relative;
+            top: calc(100% - 300px);
+            padding: 20px;
+            font-size: 50px;
+            color: red;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 100px;
+            color: white;
+            border: none;
+        }
+        #btn-start{
+            background-color: dodgerblue;
+        }
+        #btn-end{
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <section class="man-img-section">
+            <div></div>
+            <h1 id="h1-1">A</h1>
+            <div></div>
+            <h1 id="h1-2">B</h1>
+            <div></div>
+            <h1 id="h1-3">C</h1>
+            <div></div>
+            <h1 id="h1-4">D</h1>
+            <div></div>
+            <h1 id="h1-5">E</h1>
+            <div></div>
+            <h1 id="h1-6">F</h1>
+        </section>
+        <section class="home-img-section">
+            <div class="home-gif"></div>
+        </section>
+    </main>
+    <button type="button" id="btn-start" class="btn-start">Start</button>
+    <button type="button" id="btn-end" class="btn-end">end</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    let h1_1 = $("#h1-1");
+    let h1_2 = $("#h1-2");
+    let h1_3 = $("#h1-3");
+    let h1_4 = $("#h1-4");
+    let h1_5 = $("#h1-5");
+    let h1_6 = $("#h1-6");
+    let btnStart = $("#btn-start");
+    let btnEnd = $("#btn-end");
+
+    btnStart.css("display", "block");
+    btnEnd.css("display", "none");
+
+    let arr = ["A" , "B" , "C" , "D" , "E" , "F"];
+
+    let arrRotate = () => {
+        arr.unshift(arr.pop());
+        h1_1.text(arr[0]);
+        h1_2.text(arr[1]);
+        h1_3.text(arr[2]);
+        h1_4.text(arr[3]);
+        h1_5.text(arr[4]);
+        h1_6.text(arr[5]);
+    };
+
+    let interval;
+
+    btnStart.on('click',function (){
+        interval = setInterval(arrRotate,3000);
+        btnStart.css("display", "none");
+        btnEnd.css("display", "block");
+    });
+    btnEnd.on('click',function (){
+        clearInterval(interval);
+        btnStart.css("display", "block");
+        btnEnd.css("display", "none");
+    });
+</script>
+</body>
+</html>

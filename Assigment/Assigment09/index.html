@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight Rider</title>
+    <style>
+        body{
+            background: black;
+        }
+        #kitt{
+
+            width: 800px;
+            height: 130px;
+            padding-bottom: 50px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #lightpannel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid brown;
+        }
+        .light{
+            height: 110px;
+            width: 130px;
+            background: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border: 1px solid crimson;
+        }
+        #btnpannel{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: end;
+            align-items: baseline;
+        }
+        button{
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+<section id="kitt">
+    <section id="lightpannel">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </section>
+    <section id="btnpannel">
+        <button id="start_btn">Start</button>
+        <button id="stop_btn">Stop</button>
+    </section>
+</section>
+
+<script src="../lib/jquery-3.7.1.min.js"></script>
+<script>
+    const light_count=6;
+    let currnt_light=-1;
+    let  direction="RIGHT";
+    let intervalID=null;
+
+    updateLight=()=>{
+     if (direction==="RIGHT"){
+        currnt_light++;
+        $(".light").css("background","white");
+        $(".light").eq(currnt_light).css("background","red");
+        $(".light").eq(currnt_light-1).css("background","crimson");
+        $(".light").eq(currnt_light-2).css("background","pink");
+
+
+        if (currnt_light===light_count-1){
+        direction="LEFT";
+        }
+     }else {
+         currnt_light--;
+         $(".light").css("background", "white");
+         $(".light").eq(currnt_light).css("background", "red");
+         $(".light").eq(currnt_light+1).css("background", "crimson");
+         $(".light").eq(currnt_light+2).css("background", "pink");
+
+         if (currnt_light === 0) {
+             direction = "RIGHT";
+         }
+     }
+    }
+
+
+    $('#start_btn').on('click',function (){
+        intervalID=setInterval(updateLight,100);
+    });
+    $('#stop_btn').on('click',function (){
+        clearInterval(intervalID);
+    });
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case 02</title>
+
+  <style>
+      body{
+        background-color: #383f56;
+      }
+      h1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 100px;
+      }
+      main{
+        width: 65vw;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      div{
+        width: 15%;
+        height: 60%;
+        background-color: pink;
+        border-radius: 10px;
+      }
+      .section-1{
+        display: flex;
+        align-items: center;
+      }
+      .section-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+      }
+      .section-3{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+      }
+      button{
+          width: 150px;
+          height: 40px;
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 10px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 100px;
+          color: white;
+          border: none;
+      }
+      #btn-start{
+          background-color: dodgerblue;
+      }
+      #btn-end{
+          background-color: red;
+      }
+  </style>
+</head>
+<body>
+    <h1>Java Script Queue</h1>
+    <main>
+      <section class="section-1">
+        <div id="div-1"></div>
+      </section>
+      <section class="section-2">
+        <div id="div-2"></div>
+        <div id="div-3"></div>
+        <div id="div-4"></div>
+        <div id="div-5"></div>
+      </section>
+      <section class="section-3">
+        <div id="div-6"></div>
+      </section>
+    </main>
+    <button type="button" id="btn-start" class="btn-start">Start</button>
+    <button type="button" id="btn-end" class="btn-end">end</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      let div_1 = $("#div-1");
+      let div_2 = $("#div-2");
+      let div_3 = $("#div-3");
+      let div_4 = $("#div-4");
+      let div_5 = $("#div-5");
+      let div_6 = $("#div-6");
+      let btnStart = $("#btn-start");
+      let btnEnd = $("#btn-end");
+
+      btnStart.css("display", "block");
+      btnEnd.css("display", "none");
+
+      let colors = ["red" , "green" , "blue" , "yellow" , "#f5dede" , "hotpink"];
+
+      let colorsRotate = () => {
+          div_1.css("background-color" , colors[0]);
+          div_2.css("background-color" , colors[1]);
+          div_3.css("background-color" , colors[2]);
+          div_4.css("background-color" , colors[3]);
+          div_5.css("background-color" , colors[4]);
+          div_6.css("background-color" , colors[5]);
+          colors.unshift(colors.pop());
+      }
+
+      colorsRotate();
+
+      let interval;
+
+      btnStart.on('click',function (){
+          interval = setInterval(colorsRotate,500);
+          btnStart.css("display", "none");
+          btnEnd.css("display", "block");
+      });
+      btnEnd.on('click',function (){
+          clearInterval(interval);
+          btnStart.css("display", "block");
+          btnEnd.css("display", "none");
+      });
+    </script>
+</body>
+</html>
